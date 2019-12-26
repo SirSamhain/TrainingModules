@@ -244,7 +244,26 @@ MANY WAYS TO RUN A SCRIPT :>
 		* nohup means no hickup
 	Run your script with a lower priority
 		nice myscript 
+	At
+		* will execute script at a specific time
+		* at -f myscript noon tomorrow
+	cron 
+		* scheduling scripts
+	
+	set 
+		-x prints each command with its arguments as it is executed
+		-u gives an error when using an unitialized variable and exits script
+		-n read commands but do no execute
+		-v print each command as it is read
+		-e exits script whenever a command fails (but not worth if, while, until, ||, &&)
+		... and more
 
+	shopt
+		* can set many options with -s, unset with -u
+		* shopt -s nocaseglob: ignore case with pathname expansion
+		* shopt -s extglob: enable extended pattern matching
+		* shopt -s dotglob: include hidden files with pathname expansions
+		* set -o noclobber: don't overwrite files on redirection operations
 
 
 
