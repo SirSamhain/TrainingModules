@@ -184,11 +184,66 @@ Parameter Expansion
 	Anchor your pattern
 	${var/#patter/string} matches beginning of the string
 	${var/%pattern/string} matches end of the string
+	
+	Default value
+		* ${var:-value} will evaluate to "value" if var is empty or unset
+		* ${var-value} similar, but only if var is unset
+	assign a default value
+		* ${var:=value} if var was empty or unset, this evaluates to "value" and assigns it to var
+		* ${var=value}
+		* similar, but only if var is unset
+
+	CONDITIONAL EXPRESSIONS
+		* ==, != operators in [[..]] do pattern matching
+		* [[ $var == pattern ]] returns true when $var matches the pattern
+		* [[ $filename == *.txt ]]
+		* use quotes to force a string 
+	REGEX
+		* =~ does regular expression matching
+			* very powerful
+			* uses POSIX extended regular expressions
+		* ? matches the token before it 0 or 1 times
+			* [0-9]? will match a single digit or nothing at all
+		*  * matches the token before it for any number of times
+			* [a-z]* will match any lowercase text or nothing at all
+		* + matches the token before it for one or more times
+			* [0-9]+ will match 1 or more digits
+		* ^ matches start of string
+		* $ matches end of string
+	End of Options
+		* is denoted by --
+			* supported by many UNIX commands
+			* Arguments after this will not be interpreted as options
+		* Makes it safe when working with data that starts with a dash
+			* for example with a file called "-l.txt"
+			* rm -- -l.txt
+			for i in ".txt; do touch --$i; done
 
 
+MANY WAYS TO RUN A SCRIPT :>
+	
+	Using hash-bang and running it as a command
+		* will start a bash subprocess
+		* executable permission has to be set
+	Or when it does not have a hash-bang
+		* bash myscript
+		* no permissions necessary
+		* bash -x myscipt
+	To import code in the current shell process
+		* source myscript
+		* .myscript
+		* this is basically what happens with .bashrc
 
-
-
+	Put a command in the background with &
+		* myscript &
+		* it will be disconnected from the interactive session 
+		* will be suspended if it tries to read input from the terminal
+	Long running scripts
+		* keep your script running when you exit the terminal session
+		* nohup myscript &
+		* nohup means no hickup
+	Run your script with a lower priority
+		nice myscript 
 
 
 
