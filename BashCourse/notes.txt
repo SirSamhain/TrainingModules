@@ -88,8 +88,8 @@ arrays
 	length of array
 	${#array[*]}
 
-	
-
+		
+	i
 
 
 
