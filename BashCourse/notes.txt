@@ -1,0 +1,112 @@
+chmod u+rwx
+	add read write eXecute permissions to a file
+	u stands for user that created the file
+	a stands for all
+	- instead of + to remove permissions
+
+#! (hashbang)
+	first line of the script
+	declares that this script file should be interpreted by the bash interpreter
+	declares other options that should be used by the interpreter
+
+$* means all of the input from console
+$1 just the first word from console
+
+
+use $HOME instead of ~ because the ~ get's escaped by double quotes. just to be safe
+
+use double quotes around variable names: "$x" instead of $x
+
+
+read is a builtin command that reads user input "read -p "prompt" var" shows a prompt
+
+set is used to set bash option in different parts of the script
+
+bash returns a # between 0-255. 0 is a success and all other codes are errors
+
+printf doens't print a new line by default
+
+redirecting into streams 2>&1....this redirects the error stream into the stdout stream
+
+	while test; do
+		;;thing to do
+	done
+
+until loop does it as long as test == false
+	until test; do
+		;;thing to do
+	done
+
+break breaks out of loop
+
+continue skips the rest of the iteration and goes to next iteration
+
+case WORD in
+	PATTERN1)
+		code for pattern1;;
+	PATTERN2)
+		code for pattern2;;
+esac
+
+
+
+declare or typeset(considered depricated)
+	declare -p var
+	declare -i num (only holds integers -i) will set strings = 0
+unset an attribute with +
+	declare +i num
+
+let command
+	let n=100/2
+((..))
+	((++x))
+	((p=x/100))
+	((p=$(ls|wc -l) * 10))
+	equivalent to the let command
+$((..))
+	p=$((x/100))
+	just evaluates and sets p to the result
+
+
+-r read only variable basically a constant
+
+exporting variables
+	
+
+arrays
+	stored and retrieved by index
+	x[0]="some"
+	x[1]="word"
+	retrieving
+	${x[0]} gets "some"
+	${x[*]} gets all of them in a long string
+	declare -a var #declares var as an array
+
+	initializing array
+	ar=(1 2 3 a b c)
+	
+	length of array
+	${#array[*]}
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

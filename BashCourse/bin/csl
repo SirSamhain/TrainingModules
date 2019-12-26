@@ -1,0 +1,41 @@
+#!/bin/bash
+
+#compare file count of 2 directories
+#author: joel
+
+#check number of arguments
+if [[ $# -ne 2 ]]; then
+	echo "need exactly two arguments"
+	exit 1
+fi
+
+#both arguments should be directories
+if [[ ! -d $1 ]]; then
+	echo "'$1' is not a directory"
+	exit 1
+fi
+if [[ ! -d $2 ]]; then
+	echo "'$2' is not a directory"
+	exit 1
+fi
+
+dir1="$1"
+dir2="$2"
+#get number of files in directories
+count_1=$(ls -A1 "$dir1" | wc -l)
+count_2=$(ls -A1 "$dir2" | wc -l)
+
+#which one has most files
+if [[ $count_1 -lt $count_2 ]]; then
+	echo "'$dir2' has more files"
+elif [[ $count_1 -eq $count_2 ]];then
+	echo "they are equal"
+else
+	echo "'$dir1' has more files"
+fi
+
+exit 0
+
+
+
+

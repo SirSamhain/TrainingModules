@@ -1,0 +1,18 @@
+#!/bin/bash 
+
+
+#var for date
+date="$(date)"
+
+#get the topic
+topic="$1"
+
+#filename to write to
+filename="$HOME/Documents/${topic}Notes.txt"
+
+#ask user for input
+read -p "Enter Note:"  note
+
+echo "$date: $note" >> "$filename"
+
+echo "Note Saved: '$note' saved to $filename"

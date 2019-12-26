@@ -1,0 +1,36 @@
+#!/bin/bash 
+
+
+#var for date
+date="$(date)"
+
+#get the topic
+topic="$1"
+
+#filename to write to
+filename="$HOME/Documents/${topic}Notes.txt"
+
+#ask user for input
+read -p "Enter Note:"  note
+
+if [[ $note ]]; then
+	echo "$date: $note" >> "$filename"
+	echo "Note Saved: '$note' saved to $filename"
+else
+	echo "No input; note wasn't saved" > /dev/stderr
+fi
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

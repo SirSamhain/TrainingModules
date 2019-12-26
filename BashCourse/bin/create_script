@@ -1,0 +1,53 @@
+#!/bin/bash
+
+#create_script
+#this script creates a new bash script, sets permissions
+#author: joel
+
+
+
+#is ther an argument? 
+if [[ ! "$1" ]]; then
+	echo "missing argument"
+	exit 1
+fi
+
+bindir="${HOME}/Documents/Training/BashCourse/bin"
+scriptname="$1"
+filename="${bindir}/${scriptname}"
+
+#if the file already exists then it exits
+if [[ -e $filename ]]; then
+	echo "file ${filename} already exists"
+	exit 1
+fi
+
+if type "$scriptname" > /dev/null 2>&1; then
+	echo "There is already a command with name ${scriptname}"
+	exit 1
+fi
+
+#checking if the directory exists and then creates it if it doesn't
+if [[ ! -d $bindir ]]; then
+	# if not create bin directory
+	if mkdir "$bindir"; then
+		echo "created ${bindir}"
+	else
+		echo "could not create ${bindir}"
+		exit 1
+	fi
+fi
+
+#CREATE a script with a single line
+echo "#!/bin/bash" >> "$filename"
+#add executable permissions
+chmod u+x "$filename"
+#open with vim
+
+if [[ ! $EDITOR ]]; then
+	export EDITOR=vim
+fi
+
+$EDITOR "$filename"
+
+
