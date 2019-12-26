@@ -89,7 +89,129 @@ arrays
 	${#array[*]}
 
 		
-	i
+Special variables
+	$1 positional parameters 
+	$* and $@ get all
+	$# size 	
+	$0 
+
+	Shift
+	Getopts
+
+	POSITIONAL
+	hold the n-th command line argument: $1, $2, etc,
+	above 9 use braces: ${10}
+	$0 - holds the name of the script as it was called
+
+	SHIFT
+	removes the first argument
+	all positional parameters shift
+		* $2 -> $1
+		* $3 -> $2
+		* etc...
+		$# is lowered by one
+
+	GETOPTS
+	expects options to start with a dash (-x)
+	allows options that take an argument (-f file)
+
+	getopts optstring name
+	optstring
+		* A list expected options
+		* "ab" will let your script handle an option -a and/or -b
+		* Append: to options that take an argument
+	name
+		* the name of a variable
+		* every time you call getopts, it will place the next option into $name
+	getopts returns false when there aren't any options left 
+		while getopts "a:b:c" opt; do
+			case $opt in
+				a);;
+				b);;
+				c);;
+				\?);;
+			esac
+		done
+	arguments to a option is stored in ${OPTARG}
+
+FUNCTIONS
+
+	define your own command
+	name() {.....}
+		you can run the code in the braces as a new command
+	
+	execute it like any command
+		give it arguments
+		use redirection
+	positional parameters are available for function arguments
+		$1, $2, ...
+	naming your functions same rule as scripts
+	
+	bash variables are globally visible
+		* in a function, you can make a variable local to that function
+		* use declare or local
+
+	exit a function with return
+		* returns a status code, like exit
+		* without a return statement, function returns status of last statement
+	Returning any other value
+		* use a global variable
+		* send the data to output and use command substitution $()
+	exporting a function 
+		export -f functionName
+
+	
+
+
+Parameter Expansion
+	allows powerful string manipulation
+	${#var}: length of $var
+	
+	Removing part of a string
+		* ${var#pattern} Removes shortest match from begin of string
+		* ${var##pattern} Removes longest match from begin of string
+		* ${var%pattern} Removes shortest match from end of string
+		* ${var%%patter} longest from end
+	Pattern matching is like pathname matching with *,? and []
+	example with i="/Users/jortiz/demo.txt"
+		${i#*/} Users/jortiz/demo.txt
+		${i##*/} demo.txt
+
+	SEARCH AND REPLACE
+		${var/pattern/string} : sub first match
+		${var//pattern/string} : sub all matches
+
+	Anchor your pattern
+	${var/#patter/string} matches beginning of the string
+	${var/%pattern/string} matches end of the string
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
