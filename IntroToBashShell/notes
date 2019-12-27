@@ -29,6 +29,38 @@ WILDCARDS
 	
 	* which means every file
 
+SORT COMMAND
+	sorts a text file by alphabetical order
+	-n for numbers
+	-r reverse
+	-k2 second column
+Advanced tools
+	sed 
+		* stream editor
+		* transform text
+		* replace words
+		* most common use: to replace "old" with new
+		
+	awk
+	perl
+	python
+
+column based data
+	join
+	cut
+	sort
+
+
+
+Processes
+	Ctrl+z suspends the process
+	bg command sends a process to the background
+	fg command sends a process to the foreground so you can't enter new commands on the same shell
+
+kill jobs by %numbers
+
+ps -e command finds the process ids for programs run with grep to find something 
+
 
 
 
