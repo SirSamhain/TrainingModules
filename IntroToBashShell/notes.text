@@ -1,0 +1,90 @@
+Why bash? 
+	Bash is a command line shell
+		* gives you access to many UNIX utilites
+		* efficiently run complex tasks
+		* and make them repeatable 
+	some use cases
+		* file management
+		* Processing data
+		* System administrator
+		* remote access
+		* scripting
+	Dominant shell on UNIX
+		* default on mac and linux
+
+UNIX Philosophy	
+	Write programs that do one thing and do it well
+	Write programs that work together
+	Write programs to handle text streams
+		* because that is a universal interface
+pwd path to working directory
+
+echo $BASH
+
+mv rm cp have the -i switch which basically just asks if you want to actually delete the stuff lol
+
+
+
+WILDCARDS
+	
+	* which means every file
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
