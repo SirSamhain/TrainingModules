@@ -1,0 +1,77 @@
+
+waste
+	anything that takes time but doesn't add value for the customer
+	
+	Kownlegde waste
+		* causeed by dirupting flow of knowledge
+		* caused by discrupting the absorption of kowledge
+		* physical barriers and overly complex reports
+	waiting waste
+		* often caused by uneven processing
+		* can occur with highly specialized personnel
+		* waiting for environments or approvals before deploying .. or approvals
+	over-processing waste
+		* this is about doing more work than is required or needed
+		* can address by actually knowing reqs
+		* over engineering software or too long design specs
+	Motion Waste
+		* unnecessary movement by people or machines
+		* May fix by physically rearranging, or updatign tech
+		* double entry of data or repetitive manual testing
+	transportation waste
+		* this is about moving things without adding value
+		* impacts wating waste and may be done because "we've always done it that way"
+		* Sending rubber-stamped approval docs among executives
+	correction waste
+		* product isn't usable, and rework is required
+		* often happens when quality not built into the process
+		* having software "testing" as a distinct phase in the SDLC
+	Inventory waste
+		* Things are piling up and not realizing value
+		* Causes lumpy processing and bunches up hidden problems
+		* Completed code waiting to be deployed
+	Over-Production Waste
+		* This happens when you produce more than necessary
+		* Sometime done to keep staff or machines busy
+		* Creating test environments for each team
+DEV OPS
+	What do you want to accomplish? 
+		1. Increase the value given to customers
+		2. Respect your people
+		3. 
+	What's lean all about? 
+		* Focus on customer value
+		* free up resources	
+		* eliminate waste
+		* one-piece flow
+		* shared, continuous learning. Multiple learning to do different things
+		* eliminate overburden of people
+		* Theory of constraints - recognizing that things are constraints
+
+	C.A.L.M.S
+		
+		Culture - people and process at the forefront.
+		Automation - Repeatability by automating activities.
+		Lean - Applying lean principles to I.T. ( preventing defects )
+		Metrics - Measure extensivley and use to improve
+		Sharing - Continuous learning by sharing knowledge.
+		
+		Does DevOps Matter? Elite Performers are winning. 
+			2604x faster time to recover from incidents
+			46x more frequent code deployments
+			1.53x more likely to meet or exceed business goals
+			1.8x more likely to recommend their team to others
+	
+
+
+	Explore the idea of waste
+	DevOps dfinatley does matter 
+
+
+
+
+
+
+
+
+
