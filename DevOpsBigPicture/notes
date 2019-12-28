@@ -67,6 +67,167 @@ DEV OPS
 	Explore the idea of waste
 	DevOps dfinatley does matter 
 
+changing the culture
+	
+	Re-establish your purpose
+		* What are you shared objectives?
+		* does everyone empathize with the customer? 
+		* are you going through the (agile) motions? 
+		* misalignment here will doom your effor
+	Elevate Empowerment
+		* trust the team, let them take ownership
+		* employees do what's needed to run the service
+		* anyone can "pull the cord" 
+		* teams form during crisis to resolve issues
+	Promote Accountability
+		* can't have empowerment without accountability
+		* quality built into the process
+		* Shared commitment to excellence
+	Require Teamwork
+		* All disciplines working together, in crisis or daily operations
+		* Respect unique skill sets
+		* Don't reward the "lone genius" or firefighter
+	Encourage Continuous Learning
+		* Offer resources and time to learn
+		* Encourage experimentation
+		* conduct blameless postmortems
+		* Make it easy to share and discover info
+	Share, Live, and Reward the Right Values
+		* Don't just say your values, live them
+		* What triggers promotion or bonuses? 
+		* Managers must lead by example
+	
+Changing the organization
+	
+	Understand your customers and value streams
+		* Build up and value empathy for users
+		* step back and "see" they systems in place
+		* Perform value stream mapping exercies to focus your improvement efforts
+	Put the spotlight on bottlenecks
+		* it's ineffective to optimize anywhere but the constraint
+		* A constraint can be internal (e.g. people, processes) or external (e.g. limited demand)
+		* 
+	Do Away with inconsisten environments
+		* applies to different environments (e.g. dev, QA), but also within each environment
+		* Result of this bottleneck? Slower software relseases and issues resolution
+		* aim for on-demand with no configuration drift
+	Automate the path to production
+		* How fast can you deploy code? Is inventory piled up? 
+		* Coding or testing faster won't help you if deployment process isn't optimized
+		* solution involves continuous integration and comprehensive, automated pipelines
+	 
+	Build in Quality Up-Front
+		* QA teams aren't responsible for quality. we all are
+		* Shared commitment to excellence means testing early and often
+		* Achieved through practices like TDD and continuous integration
+	Break Down Communication Barriers
+		* Poor comms results in push, not pull-based systems
+		* feedback loops are critical to context and shared ownership
+		* solved via a mix of tools, practices, and sincere intent to collaborate
+	Rethink and Rebuild your Teams
+		* I.T. is historically organized by functional teams
+		* The result? Waste? uneven flow and poor visibilit of the value stream
+		* smart companies moving from projects to products
+	
+	"DevOps is a re-org, not anew team to hire."
+	
+	Create Permanent Teams around core products
+		* teams don't disbadn after shipping v1, they build and run their service
+		* The benefit? Retain kowledge continuously update services, improve customer satisfaction
+		* Not a fit for every product, but puts focus on customer value
+	To achieve velocity, you need complete teams
+		* must be capbale of going from idea to production on their own
+		* encourage generalist skill sets versus hyper-specialization
+		* in large organs may use services or APIs (vs people) vs constraints
+
+
+
+	Ruthlessly eliminate waste in the organization
+		* policies and procedures get heavier over time; return to the intent
+		* automate manual steps wherever possible
+		* tech can help, but improvement here takes change and focus
+	
+Overcoming objections
+	
+	Objection: "DevOps makes us less secure."
+		* developers pushing to production? 
+		* shifting left on security improves posture
+		* automation means fewer manual mistakes, and faster vulnerability resolution
+	Objs: "We have offshore teams."
+		* co-location of teams isn't always possible, or necessary
+		* shared culture, values, and incentives the only requirement
+		* Nature of outsourced partnerships has to change
+	Objs: "You're eliminating our ops team."
+		* do you fire all the system administrators? 
+		* operations is mroe important, but role changes
+		* it's about running platforms, creating APIs, delivering pipelines
+	Objs: "I've got too much COTS and legacy code."
+		* can you only do devops with fresh cloudy systems? no
+		* TDD, continuous integrations, deployment automation possible with legacy environments
+		* remember the point isn't just pushing code faster, but improving flow
+	Objs: "We don't have these skills."
+		* an investment worth making
+		* many of these are "soft" skills
+		* Make it group learning and apply immediately
+
+Things to remember about devops and tools
+	The goal is continuous improvement
+	Dev ops is a way to work. You can't buy it
+	Tool adoption happens in stages
+
+Planning Tools
+	Why it matters to DevOps: Shared purpose, transparency, empowerment
+		*Gitlab
+		*TaskTop	
+		*Trello
+		*Azure Boards
+Issue Tracking Tools
+	Why it matters to DevOps: Customer responsiveness, limited kowledge waste, feedback loop
+		* Atlassian Jira
+		* JetBrains YouTrack
+		
+Build Tools
+	Why it matters to DevOps: Consistent packaging, automates an error-prone activity
+
+**TESTING**	
+	Why it matters to DevOps: Puts focus on built in quality, creates confidence in deployed artifacts
+
+	JUnit for java	
+
+Continuous Integration tools
+	Why it matter to DevOps:fast feedback, reduce defect waste and waiting waste
+
+Continuous Deployment
+	Why it matters: Limit your pre-production inventory, automate complex pipelines, unify team around getting value to customers
+
+configuration management tools
+	Why it matters: Enforce consistency, treat infrastructure as code
+
+cloud platforms
+	Why it matters: Automation-friendly, observable runtimes for software
+
+Monitoring and Logging tools
+	Why it matters: Fast recovery, responsiveness, transparency, limited human involvement during incidents
+
+communication tools
+	Why it matters: Connect teams, limit waiting waste, imporve collaboration
+	
+Knowledge sharing tools
+	why it matters: Reduce knowledge waste, increase new-hire productivity, limit repeat mistakes 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
