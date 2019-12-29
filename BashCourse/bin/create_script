@@ -12,7 +12,7 @@ if [[ ! "$1" ]]; then
 	exit 1
 fi
 
-bindir="${HOME}/Documents/Training/BashCourse/bin"
+bindir="${HOME}/Documents/TrainingModules/BashCourse/bin"
 scriptname="$1"
 filename="${bindir}/${scriptname}"
 
